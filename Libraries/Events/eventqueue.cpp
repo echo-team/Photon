@@ -11,7 +11,7 @@
             {
                 this->lQueue->push(listener);
             }
-            void run()
+            void dispatch()
             {
                 ListUnit<void (*)(int)>* luCurrent = this->lQueue->first;
                 while (luCurrent != NULL)
